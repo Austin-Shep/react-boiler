@@ -11,7 +11,7 @@ class App extends React.Component {
     return (
       <div>
         <h1>Count!: {this.state.counter}</h1>
-        <img src="https://via.placeholder.com/150" />
+        <img src="https://via.placeholder.com/150" alt="Placeholder" />
         <button
           onClick={() =>
             this.setState(state => ({ counter: state.counter + 1 }))

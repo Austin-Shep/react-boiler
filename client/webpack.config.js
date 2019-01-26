@@ -36,6 +36,9 @@ module.exports = {
     new BundleAnalyzerPlugin()
   ],
   devServer: {
-    port: 8000
+    port: 8080,
+    proxy: {
+      '/api': 'http://localhost:3000'
+    }
   }
 }
